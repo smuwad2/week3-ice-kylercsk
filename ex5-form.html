@@ -10,37 +10,37 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <form>
             <div class="row g-3">
-                <div>
+                <div class='col-md-6 col-lg-4'>
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                    <input class='d-block form-control' type="text" id="fullName">
                 </div>
 
                 <!-- Email -->
-                <div>
+                <div class='col-md-6 col-lg-4'>
                     <label for="email">Email address</label>
-                    <input type="email" id="email">
+                    <input class='d-block form-control' type="email" id="email">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
+                <div class='col-md-6 col-lg-4'>
+                    <label class="d-block">Gender</label>
+                    <div class="d-inline">
                         <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Male</label>
                     </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" value="female">
+                    <div class="d-inline">
+                        <input  type="radio" name="gender" id="female" value="female">
                         <label for="female">Female</label>
                     </div>
                 </div>
 
                 <!-- Country -->
-                <div>
+                <div class="col-md-6 col-lg-4">
                     <label for="country">Country</label>
-                    <select id="country">
+                    <select class="form-control" id="country">
                         <option selected>Select your country</option>
                         <option>USA</option>
                         <option>Singapore</option>
@@ -49,10 +49,10 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div>
+                <div class="col-4">
                     <div class="mt-4">
-                        <input type="checkbox" id="subscribe">
-                        <label for="subscribe">
+                        <input class='form-check-input' type="checkbox" id="subscribe">
+                        <label class='form-check-label' for="subscribe">
                             Subscribe to newsletter
                         </label>
                     </div>
@@ -61,11 +61,11 @@
                 <!-- Message -->
                 <div>
                     <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
                 </div>
 
                 <!-- Submit Button -->
-                <div>
+                <div class='text-center'>
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </div>
             </div>
